@@ -1,0 +1,81 @@
+Smartech Typing Tutor - how to add TEST TYPES + their exercises (paste into your GitHub exercise file)
+Anything above the first ### line is ignored. Keep your existing exercises exactly as they are.
+
+=====================  1) DEFINE A TEST TYPE  =====================
+### TEST CHSL-ENG
+name: SSC CHSL English
+language: English
+mode: paragraph
+minutes: 10
+wpm: 35
+accuracy: 93
+basis: gross
+code: CHSL
+description: 10-minute English passage test as per SSC CHSL.
+note: General/UR category cut-off. Always confirm figures in the official notification.
+
+### TEST CGL-ENG
+name: SSC CGL English (DEST)
+language: English
+mode: paragraph
+minutes: 15
+chars: 2000
+accuracy: 93
+code: CGL
+
+### TEST PSSSB-PBI
+name: PSSSB Punjabi
+language: Punjabi
+mode: chunk
+minutes: 10
+wpm: 30
+accuracy: 92
+code: PSSSB
+
+### TEST TRIAL
+name: Free Trial Test
+minutes: 5
+wpm: 20
+accuracy: 85
+code: FREE
+
+=====================  2) MARK EXERCISES FOR A TEST  =====================
+Put @ID in the exercise header. Tagged exercises appear ONLY inside that test.
+
+### English @CHSL-ENG Passage 1
+---
+Replace this with the CHSL English passage 1 ...
+---
+
+### English @CHSL-ENG @CGL-ENG Passage 2 (used by two tests)
+---
+Replace this with a passage that serves both tests ...
+---
+
+### @PSSSB-PBI Punjabi Set 1
+---
+ਇੱਥੇ ਪੰਜਾਬੀ ਅਭਿਆਸ ਲਿਖੋ।
+---
+
+### English @TRIAL Warm-up
+---
+Free trial text ...
+---
+
+=====================  FIELD GUIDE  =====================
+name         Title on the Test Centre card (default: the ID)
+language     English / Punjabi / Hindi (label only; each exercise keeps its own language)
+mode         paragraph = long passage page, chunk = chunk page (default paragraph)
+minutes      Test time, fixed for this test (default 10)
+wpm          Minimum speed in words/min (1 word = 5 characters)      } use ONE of
+chars        Minimum characters instead of wpm (e.g. 2000)           } wpm or chars
+accuracy     Minimum accuracy % (default 90)
+basis        gross (default) or net - which character count must reach the speed target
+code         Access-code TYPE in the Google Sheet. FREE = no code. If left out, the
+             test ID itself is the code type (locked by default).
+description  Optional line on the card
+note         Optional line printed under the result
+active       no = hide the test without deleting it
+
+Rules: a test ID may use letters, digits, - and _ (no spaces). Pass = speed target reached
+AND accuracy reached. Tests with the same "code:" share one activation.
