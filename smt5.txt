@@ -11,3 +11,18 @@ code: CHSL
 ---
 This is CHSL test
 ---
+
+
+### TEST CHSL-ENG
+name: Punjab Haryana High Court Clerk English
+language: English
+mode: paragraph
+minutes: 10
+wpm: 30
+accuracy: 95
+code: PHHC
+
+### English @PHHC-ENG Passage 1
+---
+This is CHSL test
+---
