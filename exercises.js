@@ -81,6 +81,12 @@
    One exercise can serve several tests:  ### English @CHSL-ENG @CGL-ENG Set A
    Language word is optional when an @tag is present (detected from the text).
 
+   A whole test can also BORROW every exercise of other tests with one line
+   in its "### TEST" block (no need to repeat the @tags):
+
+       ### TEST CGL-ENG
+       include: CHSL-ENG, PHHC-ENG     (comma separated test IDs)
+
    Exercises are shown in the same order as they appear in the file.
    Anything above the first ### line is ignored (use it for notes).
    ============================================================ */
@@ -88,7 +94,7 @@
   "use strict";
 
   var DEFAULT_URL =
-    "https://raw.githubusercontent.com/skrajb/App/refs/heads/main/All%20Exercises%20for%20Institute.txt";
+    "https://raw.githubusercontent.com/skrajb/smt5/refs/heads/main/smt5.txt";
 
   // Re-download at most this often while students move between pages.
   var TTL_MS = 5 * 60 * 1000;
@@ -215,6 +221,7 @@
       code: codeRaw || String(id).toUpperCase().replace(/[^A-Z0-9_\-]/g, ""),
       desc: pick("description", "desc"),
       note: pick("note", "pass-note"),
+      include: String(pick("include", "includes", "also-uses", "uses", "borrow")).split(/[,;\s]+/).filter(Boolean),
       active: truthy(pick("active", "enabled", "show") || "yes")
     };
   }
@@ -270,14 +277,39 @@
     var want = String(id || "").toLowerCase();
     return tests().filter(function (t) { return String(t.id).toLowerCase() === want; })[0] || null;
   }
-  // Exercises marked "@ID" for one test, in file order
-  function testExercises(id) {
+  function sameEx(a, b) {
+    return a.lang === b.lang && a.title === b.title && a.text === b.text;
+  }
+  // Exercises of one test, in file order: the ones tagged "@ID" plus, in the order
+  // listed, every exercise of the tests named in this test's "include:" line.
+  function testExercises(id, _seen) {
     var want = String(id || "").toLowerCase();
-    return remoteItems().concat(readArray(KEY.custom)).filter(function (ex) {
-      return ex && ex.text && ex.mode === "test" && (ex.tests || []).some(function (t) {
-        return String(t).toLowerCase() === want;
+    var seen = (_seen || []).concat(want);
+    var all = remoteItems().concat(readArray(KEY.custom)).filter(function (ex) {
+      return ex && ex.text && ex.mode === "test";
+    });
+    var out = all.filter(function (ex) {
+      return (ex.tests || []).some(function (t) { return String(t).toLowerCase() === want; });
+    });
+    var t = testById(want);
+    ((t && t.include) || []).forEach(function (inc) {
+      var key = String(inc).toLowerCase();
+      if (seen.indexOf(key) !== -1) return;           // avoid loops
+      testExercises(key, seen).forEach(function (ex) {
+        if (!out.some(function (o) { return sameEx(o, ex); })) out.push(ex);
       });
     });
+    return out;
+  }
+  // Every test that uses this exercise (directly tagged or through "include")
+  function testsUsing(ex) {
+    return tests().filter(function (t) {
+      return testExercises(t.id).some(function (e) { return sameEx(e, ex); });
+    });
+  }
+  // Everything (downloaded + added on this computer)
+  function allItems() {
+    return remoteItems().concat(readArray(KEY.custom)).filter(function (ex) { return ex && ex.text; });
   }
 
   function list(lang, mode) {
@@ -493,6 +525,8 @@
     tests: tests,
     testById: testById,
     testExercises: testExercises,
+    testsUsing: testsUsing,
+    allItems: allItems,
     list: list,
     refresh: refresh,
     mount: mount,

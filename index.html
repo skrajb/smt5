@@ -14,6 +14,8 @@
   <script src="sheet-sync.js"></script>
 <script src="db.js"></script>
   <script src="exercises.js"></script>
+  <script src="tests.js"></script>
+  <script src="testprint.js"></script>
   <script src="profile.js"></script>
   <script src="sidebar.js"></script>
 
@@ -172,6 +174,19 @@
         In that file, <code>### English</code> shows an exercise in both lists, <code>### English Chunk</code> in the Chunk list only,
         and <code>### English Paragraph</code> in the Long Paragraph list only (same for Punjabi and Hindi).
       </p>
+
+      <h3 style="margin-top:15px;">Print exercises</h3>
+      <p style="color:var(--muted);font-size:14px;margin-top:4px;">
+        Every exercise prints on its own A4 sheet with the Smartech logo header, test name, time, pass rule and
+        Name / Roll No. / Date lines. The whole exercise is fitted on that one page.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+        <button type="button" id="printAllBtn" onclick="printExercises('all')">&#128424; Print ALL exercises</button>
+        <select id="printScope" aria-label="Choose what to print"></select>
+        <button type="button" onclick="printExercises(document.getElementById('printScope').value)">Print selection</button>
+      </div>
+      <p id="printInfo" style="font-size:13px;color:var(--muted);"></p>
+      <div id="testOverview" style="overflow-x:auto;"></div>
 
       <div>
         <input type="file" id="exerciseFile">
@@ -334,6 +349,51 @@
     container.querySelectorAll('.delete-btn').forEach(btn => {
       btn.addEventListener('click', () => deleteExercise(Number(btn.dataset.index)));
     });
+    renderPrintPanel();
+  }
+
+
+  // ---- Print panel (uses testprint.js) ----
+  function renderPrintPanel() {
+    if (!window.SmartechPrint) return;
+    const E = SmartechExercises, P = SmartechPrint;
+    const sel = document.getElementById('printScope');
+    const info = document.getElementById('printInfo');
+    const over = document.getElementById('testOverview');
+    if (!sel || !info || !over) return;
+
+    const tests = E.tests();
+    const nTests = P.collect('tests').length;
+    const nPractice = P.collect('practice').length;
+    const nDemo = P.collect('demo').length;
+    const keep = sel.value;
+    sel.innerHTML =
+      '<option value="all">Everything (' + (nTests + nPractice + nDemo) + ' sheets)</option>' +
+      '<option value="tests">All test exercises (' + nTests + ')</option>' +
+      tests.map(t => '<option value="test:' + escapeHTML(t.id) + '">Test: ' + escapeHTML(t.name) + ' (' + E.testExercises(t.id).length + ')</option>').join('') +
+      '<option value="practice">Practice exercises (' + nPractice + ')</option>' +
+      '<option value="demo">Demo exercises (' + nDemo + ')</option>';
+    if (keep) sel.value = keep;
+    if (sel.selectedIndex < 0) sel.selectedIndex = 0;
+
+    const total = nTests + nPractice + nDemo;
+    info.textContent = total
+      ? 'Print ALL = ' + total + ' sheets (' + nTests + ' test, ' + nPractice + ' practice, ' + nDemo + ' demo). In the print window choose your printer, or "Save as PDF".'
+      : 'No exercises loaded yet.';
+
+    if (!tests.length) { over.innerHTML = ''; return; }
+    over.innerHTML = '<table style="width:100%;border-collapse:collapse;font-size:13px;margin-top:6px;">' +
+      '<thead><tr style="text-align:left;color:var(--muted);"><th style="padding:4px 8px;">Test</th><th style="padding:4px 8px;">Exercises</th><th style="padding:4px 8px;">Shared with other tests</th></tr></thead><tbody>' +
+      tests.map(t => {
+        const exs = E.testExercises(t.id);
+        const shared = exs.filter(ex => E.testsUsing(ex).length > 1).length;
+        return '<tr style="border-top:1px solid var(--border);"><td style="padding:6px 8px;"><b>' + escapeHTML(t.name) + '</b> <small style="color:var(--muted);">(' + escapeHTML(t.id) + ')</small></td>' +
+               '<td style="padding:6px 8px;">' + exs.length + '</td><td style="padding:6px 8px;">' + shared + '</td></tr>';
+      }).join('') + '</tbody></table>';
+  }
+
+  function printExercises(scope) {
+    SmartechPrint.print(SmartechPrint.collect(scope));
   }
 
   function addExercise() {

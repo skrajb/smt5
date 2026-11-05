@@ -213,7 +213,8 @@ function restartTest() {
 // -------------------- New Exercise (routes by language) --------------------
 const EXERCISE_LIST_PAGES = { English: "engtutor.html", Punjabi: "pbitutor.html", Hindi: "hinditutor.html" };
 function goToExerciseList() {
-    if (smartechActiveTest()) { window.location.href = "tests.html"; return; }
+    var _at = smartechActiveTest();
+    if (_at) { window.location.href = "testexercises.html?test=" + encodeURIComponent(_at.id); return; }
     const lang = localStorage.getItem("selectedExerciseLanguage") || "English";
     window.location.href = EXERCISE_LIST_PAGES[lang] || EXERCISE_LIST_PAGES.English;
 }

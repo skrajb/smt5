@@ -56,6 +56,14 @@ body { font-family: var(--font-body); background: var(--bg); display: flex; flex
   font-weight: 700; font-size: .9rem; cursor: pointer; transition: transform .12s ease;
 }
 .tc-ex .exercise-btn:hover { transform: translateY(-2px); }
+.tc-card.tc-link { cursor: pointer; transition: transform .14s ease, box-shadow .14s ease; position: relative; }
+.tc-card.tc-link:hover, .tc-card.tc-link:focus-visible { transform: translateY(-3px); box-shadow: var(--shadow-lg); outline: none; }
+.tc-card.tc-link:focus-visible { box-shadow: 0 0 0 3px var(--gold-light), var(--shadow-lg); }
+.tc-facts { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0 0 14px; padding: 10px 0; border-top: 1px dashed var(--border); border-bottom: 1px dashed var(--border); }
+.tc-fact { font-size: 12px; color: var(--muted); }
+.tc-fact b { display: block; font-size: 15px; color: var(--ink); }
+.tc-open { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.tc-open .tc-btn { text-decoration: none; display: inline-block; }
 .tc-empty { color: var(--muted); font-size: 13.5px; margin: 6px 0 0; }
 .tc-foot { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
 .tc-foot small { color: var(--muted); font-size: 12px; }
@@ -84,9 +92,9 @@ document.addEventListener('keydown', e => {
 <div class="tc-wrap">
 
   <p class="tc-lead">
-    <strong>How it works:</strong> each test below has its own <strong>time</strong>, <strong>pass rule</strong>
-    and, where shown, its own <strong>access code</strong> from your institute. Enter the code once on this
-    computer, then pick an exercise. Your result follows that test's pass rule.
+    <strong>How it works:</strong> each card below is an exam-style test with its own <strong>time</strong>
+    and <strong>pass rule</strong>. Click a card to open its exercises on a new page, then choose the
+    exercise you want to take. Tests that need an access code ask for it there.
   </p>
 
   <div class="tc-grid" id="tcGrid"><p class="tc-empty">Loading tests&hellip;</p></div>
@@ -128,60 +136,31 @@ document.addEventListener('keydown', e => {
 
   function card(t) {
     var st = statusOf(t);
+    var count = E.testExercises(t.id).length;
+    var href = "testexercises.html?test=" + encodeURIComponent(t.id);
     var el = document.createElement("section");
-    el.className = "tc-card";
+    el.className = "tc-card tc-link";
+    el.tabIndex = 0;
+    el.setAttribute("role", "link");
+    el.setAttribute("aria-label", "Open exercises for " + t.name);
     var lang = t.lang ? '<span class="tc-pill">' + esc(t.lang) + "</span>" : "";
+    var need = T.requiredWpm(t);
     el.innerHTML =
       '<div class="tc-top"><h2>' + esc(t.name) + "</h2>" + lang +
       '<span class="tc-pill ' + st.cls + '">' + esc(st.label) + "</span></div>" +
       (t.desc ? '<p class="tc-desc">' + esc(t.desc) + "</p>" : "") +
-      '<p class="tc-rule">' + esc(T.summary(t)) + "</p>" +
+      '<div class="tc-facts">' +
+        '<div class="tc-fact"><b>' + t.minutes + ' min</b>Test time</div>' +
+        (need ? '<div class="tc-fact"><b>' + need + ' WPM</b>Minimum speed</div>' : "") +
+        '<div class="tc-fact"><b>' + t.accuracy + '%</b>Minimum accuracy</div>' +
+        '<div class="tc-fact"><b>' + (loading && !count ? "\u2026" : count) + '</b>Exercises</div>' +
+      "</div>" +
       '<p class="tc-meta">' + (t.mode === "chunk" ? "Chunk typing" : "Long paragraph") + " test</p>" +
-      '<div class="tc-body"></div>';
-    var body = el.querySelector(".tc-body");
-
-    if (!st.unlocked) {
-      body.innerHTML =
-        '<div class="tc-codebox"><input type="text" maxlength="40" placeholder="Enter activation code" autocomplete="off" spellcheck="false">' +
-        '<button type="button" class="tc-btn">Activate</button></div>';
-      var input = body.querySelector("input"), btn = body.querySelector("button");
-      function go() {
-        if (btn.disabled) return;
-        btn.disabled = true; btn.textContent = "Checking\u2026";
-        T.unlock(t, input.value).then(function (r) {
-          if (r.reason === "EMPTY") { alert("Please type your activation code."); }
-          if (r.ok) { render(); return; }
-          btn.disabled = false; btn.textContent = "Activate";
-        });
-      }
-      btn.addEventListener("click", go);
-      input.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
-      return el;
-    }
-
-    var exs = E.testExercises(t.id);
-    if (!exs.length) {
-      body.innerHTML = '<p class="tc-empty">' + (loading ? "Loading exercises\u2026" : "No exercises have been added to this test yet.") + "</p>";
-    } else {
-      var list = document.createElement("div");
-      list.className = "tc-ex";
-      exs.forEach(function (ex, i) {
-        var b = document.createElement("button");
-        b.type = "button";
-        b.className = "exercise-btn";
-        b.textContent = (i + 1) + ". " + ex.title;
-        b.addEventListener("click", function () { T.start(t, ex, i); });
-        list.appendChild(b);
-      });
-      body.appendChild(list);
-    }
-
-    if (T.needsCode(t) && st.info && st.info.code) {
-      var foot = document.createElement("div");
-      foot.className = "tc-foot";
-      foot.innerHTML = "<small>Access until " + esc(formatActivationDate(st.info.expiresAt)) + "</small>";
-      el.appendChild(foot);
-    }
+      '<div class="tc-open"><small class="tc-meta" style="margin:0">' + (st.unlocked ? "Choose any exercise" : "Access code needed") + '</small>' +
+      '<a class="tc-btn" href="' + href + '">Open exercises &rarr;</a></div>';
+    function go() { window.location.href = href; }
+    el.addEventListener("click", function (e) { if (!e.target.closest("a")) go(); });
+    el.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
     return el;
   }
 

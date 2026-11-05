@@ -420,47 +420,21 @@ body[data-test-mode="paper"] .test-shell #typing-input {
   function printPaper() {
     var p = document.getElementById("paragraph");
     var text = p ? (p.textContent || "").trim() : "";
-    if (!sheet || !text || text === "Loading...") {
+    if (!text || text === "Loading...") {
       alert("The passage is still loading. Please try again in a moment.");
       return;
     }
-
+    if (!window.SmartechPrint) { alert("Printing is not available."); return; }
     var mins = timerSel ? Math.round(parseInt(timerSel.value, 10) / 60) : 10;
-
-    sheet.textContent = "";
-
-    var title = document.createElement("div");
-    title.className = "ps-title";
-    title.textContent = "Smartech Typing Tutor — Long Paragraph Test";
-
-    var meta = document.createElement("div");
-    meta.className = "ps-meta";
-    meta.textContent = "Time allowed: " + mins + " minutes. Type the passage below exactly as printed.";
-
-    var fields = document.createElement("div");
-    fields.className = "ps-fields";
-    ["Name:", "Roll No.:", "Date:"].forEach(function (label) {
-      var s = document.createElement("span");
-      s.textContent = label;
-      fields.appendChild(s);
-    });
-
-    var body = document.createElement("div");
-    body.className = "ps-text";
-    body.textContent = text;
-    if (window.getComputedStyle) {
-      body.style.fontFamily = getComputedStyle(p).fontFamily;
-    }
-
-    sheet.appendChild(title);
-    sheet.appendChild(meta);
-    sheet.appendChild(fields);
-    sheet.appendChild(body);
-
-    document.body.classList.add("printing-paper");
-    window.print();
-    /* Some browsers do not fire afterprint reliably */
-    setTimeout(endPrint, 1500);
+    var T = window.SmartechTests, test = T && T.activeCriteria ? T.activeCriteria() : null;
+    var no = ""; var title = "";
+    try { no = localStorage.getItem("selectedExerciseNo") || ""; title = localStorage.getItem("selectedExerciseTitle") || ""; } catch (e) {}
+    var lang = ""; try { lang = localStorage.getItem("selectedExerciseLanguage") || ""; } catch (e) {}
+    window.SmartechPrint.print([{
+      group: test ? test.name : "Long Paragraph Test",
+      title: title || "Passage", no: no, text: text, lang: lang,
+      test: test || null, minutes: test ? test.minutes : mins
+    }]);
   }
 
   if (printBtn) printBtn.addEventListener("click", printPaper);
@@ -470,6 +444,7 @@ body[data-test-mode="paper"] .test-shell #typing-input {
 <script src="sheet-sync.js"></script>
 <script src="db.js"></script>
 <script src="tests.js"></script>
+<script src="testprint.js"></script>
 <script src="script2.js"></script>
 <script src="testpage-ui.js"></script>
 <script>

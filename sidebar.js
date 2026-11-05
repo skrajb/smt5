@@ -131,6 +131,7 @@ const SMARTECH_PAGES = {
   "engexercises.html":   { eyebrow: "English", title: "English Long Paragraph Practice", sub: "Full-length exam-style passages for English typing tests.", back: ["engtutor.html", "English Course"] },
   "pbiexercises.html":   { eyebrow: "Punjabi", title: "Punjabi Long Paragraph Practice", sub: "Full-length exam-style passages for Punjabi typing tests.", back: ["pbitutor.html", "Punjabi Course"] },
   "hindiexercises.html": { eyebrow: "Hindi",   title: "Hindi Long Paragraph Practice",   sub: "Full-length exam-style passages for Hindi typing tests.", back: ["hinditutor.html", "Hindi Course"] },
+  "testexercises.html":  { eyebrow: "Tests",   title: "Choose an Exercise",    sub: "Pick any exercise of this test. Each one follows the same time and pass rule.", back: ["tests.html", "Test Centre"] },
   "testpage.html":       { eyebrow: "Practice", title: "Typing Practice",       sub: "Type each chunk exactly as shown. Your result is saved automatically when you finish.", dynamicLang: true },
   "paragraph.html":      { eyebrow: "Practice", title: "Long Paragraph Practice", sub: "Type the full passage exactly as shown. Your result is saved automatically when you finish.", dynamicLang: true },
   "progress.html":       { eyebrow: "Results", title: "My Progress",            sub: "Every typing test taken on this device: speeds, accuracy and earned certificates." },
@@ -173,7 +174,7 @@ function smartechRenderPageHeader() {
     } else if (testInfo) {
       title = String(testInfo.name).replace(/&/g, "&amp;").replace(/</g, "&lt;");
       sub = "Type the passage exactly as shown. Your result follows this test's pass rule and is saved automatically when you finish.";
-      back = ["tests.html", "Test Centre"];
+      back = ["testexercises.html?test=" + encodeURIComponent(testInfo.id), "Exercises"];
     }
   }
 
@@ -230,7 +231,7 @@ function smartechRenderSidebar() {
   // Highlight the current page in the nav
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
   const inTest = (currentPage === "paragraph.html" || currentPage === "testpage.html") && !smartechIsDemoMode() && smartechActiveTestInfo();
-  const activeHref = (currentPage === "paragraph.html" && smartechIsDemoMode()) ? "demo.html" : (inTest ? "tests.html" : currentPage);
+  const activeHref = (currentPage === "paragraph.html" && smartechIsDemoMode()) ? "demo.html" : ((inTest || currentPage === "testexercises.html") ? "tests.html" : currentPage);
   sidebar.querySelectorAll("ul li a").forEach((link) => {
     if (link.getAttribute("href") === activeHref) {
       link.classList.add("active-link");

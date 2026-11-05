@@ -204,7 +204,8 @@ function smartechActiveTest() {
 }
 const EXERCISE_LIST_PAGES = { English: "engexercises.html", Punjabi: "pbiexercises.html", Hindi: "hindiexercises.html" };
 function goToExerciseList() {
-    if (smartechActiveTest()) { window.location.href = "tests.html"; return; }
+    var _at = smartechActiveTest();
+    if (_at) { window.location.href = "testexercises.html?test=" + encodeURIComponent(_at.id); return; }
     if (localStorage.getItem("selectedExerciseMode") === "demo") {
         window.location.href = "demo.html";
         return;

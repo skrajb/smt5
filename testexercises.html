@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="icon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose an Exercise | Smartech Typing Tutor</title>
+<script src="themes.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="themes.css">
+<link rel="stylesheet" href="sidebar.css">
+<style>
+html, body { height: 100%; margin: 0; }
+body { font-family: var(--font-body); background: var(--bg); display: flex; flex-direction: column; min-height: 100vh; }
+
+.te-wrap { width: 92%; max-width: 1100px; margin: 24px auto 40px; }
+
+.te-intro {
+  background: var(--card); border: 1px solid var(--border); border-top: 3px solid var(--gold);
+  border-radius: 16px; box-shadow: var(--shadow-md); padding: 20px 22px; margin-bottom: 20px;
+}
+.te-top { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.te-intro h2 { margin: 0; border: none; padding: 0; color: var(--ink); font-size: 1.3rem; flex: 1; min-width: 0; }
+.tc-pill {
+  font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px; background: var(--ink); color: #fff; white-space: nowrap;
+}
+.tc-pill.free, .tc-pill.open { background: #2e7d32; }
+.tc-pill.lock { background: #b26a00; }
+.te-desc { margin: 4px 0 10px; color: var(--muted); font-size: 14px; line-height: 1.55; }
+.te-rule { margin: 0; font-size: 13.5px; font-weight: 700; color: var(--ink); }
+.te-note { margin: 8px 0 0; font-size: 12.5px; color: var(--muted); }
+
+.tc-codebox { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.tc-codebox input {
+  flex: 1; min-width: 180px; max-width: 320px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px;
+  font-size: 14px; letter-spacing: .04em; text-transform: uppercase; background: var(--card); color: var(--ink);
+}
+.tc-btn {
+  background: var(--ink); color: #fff; border: none; border-radius: 10px; padding: 10px 18px;
+  font-weight: 700; font-size: .9rem; cursor: pointer; font-family: inherit;
+}
+.tc-btn:disabled { opacity: .6; cursor: wait; }
+.tc-btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--border); font-weight: 600; }
+.tc-btn.ghost:hover { border-color: var(--gold); }
+.tc-btn.sm { padding: 8px 14px; font-size: .82rem; }
+
+.te-bar { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 14px; }
+.te-bar h3 { margin: 0; font-size: 1.05rem; color: var(--ink); }
+.te-bar small { color: var(--muted); font-weight: 400; margin-left: 6px; }
+
+.te-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.te-ex {
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow-sm);
+  padding: 16px 16px 14px; display: flex; flex-direction: column; gap: 8px; cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.te-ex:hover, .te-ex:focus-visible { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--gold); outline: none; }
+.te-ex-head { display: flex; align-items: center; gap: 10px; }
+.te-num {
+  flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--ink); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px;
+}
+.te-ex-title { font-weight: 700; color: var(--ink); font-size: 1rem; flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.te-prev { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; max-height: 3.9em; overflow: hidden; overflow-wrap: anywhere; }
+.te-meta { font-size: 12px; color: var(--muted); }
+.te-also { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 11.5px; color: var(--muted); }
+.te-chip { background: var(--gold-soft); color: var(--gold-dark); border-radius: 999px; padding: 2px 9px; font-weight: 700; }
+.te-actions { display: flex; gap: 8px; margin-top: 4px; }
+.te-actions .tc-btn:first-child { flex: 1; }
+
+.tc-empty { color: var(--muted); font-size: 14px; margin: 6px 0 0; }
+.te-foot { margin-top: 12px; color: var(--muted); font-size: 12px; }
+</style>
+
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+    if (e.key === 'F12') e.preventDefault();
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') e.preventDefault();
+    if (e.ctrlKey && e.key === 'u') e.preventDefault();
+    if (e.ctrlKey && e.key === 's') e.preventDefault();
+});
+</script>
+
+<script src="profile.js"></script>
+<script src="sidebar.js"></script>
+<script src="activation.js"></script>
+</head>
+<body>
+<div class="main">
+
+<button id="menuToggle">&#9776;</button>
+
+<div class="te-wrap" id="teRoot"><p class="tc-empty">Loading&hellip;</p></div>
+
+<script src="exercises.js"></script>
+<script src="tests.js"></script>
+<script src="testprint.js"></script>
+<script>
+(function () {
+  var root = document.getElementById("teRoot");
+  var T = window.SmartechTests, E = window.SmartechExercises, P = window.SmartechPrint;
+  var esc = T.esc;
+  var testId = new URLSearchParams(location.search).get("test") || "";
+  var loading = true;
+
+  function statusOf(t) {
+    if (!T.needsCode(t)) return { cls: "free", label: "Free", unlocked: true };
+    var info = getActivationInfo(t.code);
+    if (T.isUnlocked(t)) {
+      var d = info.daysLeft;
+      return { cls: "open", label: d === null ? "Unlocked" : (d + (d === 1 ? " day left" : " days left")), unlocked: true, info: info };
+    }
+    return { cls: "lock", label: info.expired ? "Expired" : "Code needed", unlocked: false, info: info };
+  }
+
+  function render() {
+    var t = E.testById(testId);
+    root.innerHTML = "";
+    if (!t) {
+      root.innerHTML = '<p class="tc-empty">' + (loading
+        ? "Loading…"
+        : 'This test was not found. <a href="tests.html">Back to the Test Centre</a>.') + "</p>";
+      return;
+    }
+    document.title = t.name + " | Smartech Typing Tutor";
+    var st = statusOf(t);
+
+    var intro = document.createElement("section");
+    intro.className = "te-intro";
+    intro.innerHTML =
+      '<div class="te-top"><h2>' + esc(t.name) + "</h2>" +
+      (t.lang ? '<span class="tc-pill">' + esc(t.lang) + "</span>" : "") +
+      '<span class="tc-pill ' + st.cls + '">' + esc(st.label) + "</span></div>" +
+      (t.desc ? '<p class="te-desc">' + esc(t.desc) + "</p>" : "") +
+      '<p class="te-rule">' + esc(T.summary(t)) + " &middot; " + (t.mode === "chunk" ? "Chunk typing" : "Long paragraph") + "</p>" +
+      (t.note ? '<p class="te-note">' + esc(t.note) + "</p>" : "");
+    root.appendChild(intro);
+
+    if (!st.unlocked) {
+      var box = document.createElement("div");
+      box.className = "tc-codebox";
+      box.innerHTML = '<input type="text" maxlength="40" placeholder="Enter activation code" autocomplete="off" spellcheck="false">' +
+        '<button type="button" class="tc-btn">Activate</button>';
+      intro.appendChild(box);
+      var input = box.querySelector("input"), btn = box.querySelector("button");
+      var go = function () {
+        if (btn.disabled) return;
+        btn.disabled = true; btn.textContent = "Checking…";
+        T.unlock(t, input.value).then(function (r) {
+          if (r.reason === "EMPTY") alert("Please type your activation code.");
+          if (r.ok) { render(); return; }
+          btn.disabled = false; btn.textContent = "Activate";
+        });
+      };
+      btn.addEventListener("click", go);
+      input.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
+      return;                                   // exercises stay hidden until unlocked
+    }
+
+    var exs = E.testExercises(t.id);
+    var bar = document.createElement("div");
+    bar.className = "te-bar";
+    bar.innerHTML = "<h3>Choose an exercise<small>" + exs.length + (exs.length === 1 ? " exercise" : " exercises") + "</small></h3>";
+    if (exs.length) {
+      var pAll = document.createElement("button");
+      pAll.type = "button"; pAll.className = "tc-btn ghost sm";
+      pAll.textContent = "Print all (" + exs.length + ")";
+      pAll.addEventListener("click", function () { P.print(P.forTest(t.id)); });
+      bar.appendChild(pAll);
+    }
+    root.appendChild(bar);
+
+    if (!exs.length) {
+      var p = document.createElement("p");
+      p.className = "tc-empty";
+      p.textContent = loading ? "Loading exercises…"
+        : (navigator.onLine === false
+            ? "You are offline. Connect to the internet once so the exercises can download."
+            : "No exercises have been added to this test yet.");
+      root.appendChild(p);
+      return;
+    }
+
+    var grid = document.createElement("div");
+    grid.className = "te-grid";
+    exs.forEach(function (ex, i) {
+      var others = E.testsUsing(ex).filter(function (o) { return o.id !== t.id; });
+      var card = document.createElement("article");
+      card.className = "te-ex";
+      card.tabIndex = 0;
+      card.setAttribute("role", "button");
+      card.setAttribute("aria-label", "Start " + ex.title);
+      var text = String(ex.text || "");
+      card.innerHTML =
+        '<div class="te-ex-head"><span class="te-num">' + (i + 1) + '</span><span class="te-ex-title">' + esc(ex.title) + "</span></div>" +
+        '<p class="te-prev">' + esc(text.slice(0, 160)) + (text.length > 160 ? "…" : "") + "</p>" +
+        '<div class="te-meta">' + esc(ex.lang || t.lang || "") + " &middot; " + text.length.toLocaleString() + " characters</div>" +
+        (others.length
+          ? '<div class="te-also">Also used in: ' + others.map(function (o) { return '<span class="te-chip">' + esc(o.name) + "</span>"; }).join("") + "</div>"
+          : "") +
+        '<div class="te-actions"><button type="button" class="tc-btn sm" data-a="start">Start this exercise</button>' +
+        '<button type="button" class="tc-btn ghost sm" data-a="print">Print</button></div>';
+      var start = function () { T.start(t, ex, i); };
+      card.addEventListener("click", function (e) {
+        var a = e.target.closest("button");
+        if (a && a.getAttribute("data-a") === "print") {
+          P.print([{ group: t.name, title: ex.title, no: i + 1, text: ex.text, lang: ex.lang || t.lang, test: t, minutes: t.minutes }]);
+          return;
+        }
+        start();
+      });
+      card.addEventListener("keydown", function (e) {
+        if ((e.key === "Enter" || e.key === " ") && e.target === card) { e.preventDefault(); start(); }
+      });
+      grid.appendChild(card);
+    });
+    root.appendChild(grid);
+
+    if (T.needsCode(t) && st.info && st.info.code) {
+      var foot = document.createElement("div");
+      foot.className = "te-foot";
+      foot.textContent = "Access until " + formatActivationDate(st.info.expiresAt);
+      root.appendChild(foot);
+    }
+  }
+
+  render();                                     // cached list first (works offline)
+  E.refresh().then(function () {
+    loading = false;
+    render();
+    var t = E.testById(testId);
+    return t ? T.revalidate(t) : false;
+  }).then(function (changed) { if (changed) render(); });
+})();
+</script>
+
+</div>
+</body>
+</html>

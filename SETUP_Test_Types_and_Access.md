@@ -49,6 +49,13 @@ text...
 ### English @CHSL-ENG @CGL-ENG Passage 2     <- one exercise, two tests
 ```
 
+**Borrow a whole test's exercises** with one line in the `### TEST` block (no tags to repeat):
+
+```
+### TEST CGL-ENG
+include: CHSL-ENG, PHHC-ENG
+```
+
 Order in the file = order of the buttons. The language word is optional with an `@tag` (it is detected from the text).
 
 ## 3. Access codes in Google Sheets (one type per test)
@@ -74,3 +81,9 @@ Replace the script behind the **results** sheet with `GoogleAppsScript_Code.gs` 
 
 ## What changed in the app
 `tests.html` (new Test Centre page, in the sidebar), `tests.js` (rules + access), `exercises.js` (reads `### TEST` blocks and `@tags`), `activation.js` (any code type), `script.js` / `script2.js` (use the test's time and pass rule), `paragraph.html`, `testpage.html`, `sidebar.js`, `sheet-sync.js`, `db.js`.
+
+## Test Centre pages and printing
+- `tests.html` shows intro cards. Clicking a card opens `testexercises.html?test=ID`, where the student enters the code (if needed) and picks an exercise.
+- Exercises used in several tests show an "Also used in" label.
+- `testprint.js` prints each exercise on one A4 sheet (Smartech logo header, auto-fitted font). Type `manage` on the Dashboard -> **Print ALL exercises**, or print one test / practice / demo.
+- `print-logo.png` is the header logo (it is packaged into the app, unlike the original logo files).
