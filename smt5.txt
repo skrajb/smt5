@@ -20,7 +20,7 @@ code: Punjab
 
 ### Demo English
 ---
-Replace this sentence with your English demo exercise
+Replace this sentence with your English demo exercise.
 ---
  
 ### Demo Punjabi
