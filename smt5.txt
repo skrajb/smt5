@@ -16,7 +16,7 @@ mode: chunk
 minutes: 10
 wpm: 30
 accuracy: 92
-code: Punjab
+code: FREE
 
 ### Demo English
 ---
