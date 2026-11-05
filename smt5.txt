@@ -1,5 +1,5 @@
 ### TEST PHHC-ENG
-name: P & H High Court Clerk English
+name: P&H High Court Clerk English
 language: English
 mode: paragraph
 minutes: 10
