@@ -10,7 +10,7 @@ code: PHHC
 
 
 ### TEST Free-Trial
-name: Free Typing Exams
+name: Free Typing Tests
 language: English, Punjabi
 mode: chunk
 minutes: 10
