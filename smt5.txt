@@ -17,14 +17,7 @@ wpm: 30
 accuracy: 95
 code: PHHC
 
-### TEST FREE-TRIAL
-name: Punjab Govt Exam English
-language: English
-mode: chunk
-minutes: 10
-wpm: 30
-accuracy: 92
-code: FREE-Eng
+
 
 ### TEST FREE-TRIAL
 name: Punjab Govt Exam Punjabi
