@@ -24,7 +24,7 @@ mode: chunk
 minutes: 10
 wpm: 30
 accuracy: 92
-code: FREE
+code: FREE-Eng
 
 ### TEST FREE-TRIAL
 name: Punjab Govt Exam Punjabi
@@ -33,7 +33,7 @@ mode: chunk
 minutes: 10
 wpm: 30
 accuracy: 92
-code: FREE
+code: FREE-Pbi
 
 ### Demo English
 ---
