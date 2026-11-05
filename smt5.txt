@@ -28,12 +28,12 @@ code: FREE-Eng
 
 ### TEST FREE-TRIAL
 name: Punjab Govt Exam Punjabi
-language: Punjabi
+language: English, Punjabi
 mode: chunk
 minutes: 10
 wpm: 30
 accuracy: 92
-code: FREE-Pbi
+code: FREE
 
 ### Demo English
 ---
