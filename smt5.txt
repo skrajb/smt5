@@ -26,6 +26,8 @@ mode: chunk
 minutes: 10
 wpm: 30
 accuracy: 92
+punjabi-wpm: 30
+punjabi-accuracy: 92
 code: FREE
 
 ### Demo English
