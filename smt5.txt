@@ -25,7 +25,7 @@ Replace this sentence with your English demo exercise.
  
 ### Demo Punjabi
 ---
-ਇੱਥੇ ਆਪਣਾ ਪੰਜਾਬੀ ਡੈਮੋ ਅਭਿਆਸ ਲਿਖੋ।
+ਇੱਥੇ ਆਪਣਾ ਪੰਜਾਬੀ ਡੈਮੋ ਅਭਿਆਸ ਲਿਖੋ
 ---
  
 ### Demo Hindi
