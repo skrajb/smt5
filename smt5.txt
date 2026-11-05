@@ -1,13 +1,3 @@
-### TEST CHSL-ENG
-name: SSC CHSL English
-language: English
-mode: paragraph
-minutes: 10
-wpm: 35
-accuracy: 93
-code: CHSL
-
-
 ### TEST PHHC-ENG
 name: P & H High Court Clerk English
 language: English
