@@ -10,7 +10,7 @@ code: PHHC
 
 
 ### TEST Free-Trial
-name: Punjab Govt Exam Punjabi
+name: Free Typing Exams
 language: English, Punjabi
 mode: chunk
 minutes: 10
