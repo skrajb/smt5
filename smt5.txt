@@ -1,10 +1,9 @@
-### TEST PHHC-ENG
-name: P&H High Court Clerk English
+### TEST PHHC
+name: Punjab & Haryana High Court
 language: English
 mode: paragraph
 minutes: 10
-wpm: 30
-accuracy: 95
+words: 300
 code: PHHC
 
 
