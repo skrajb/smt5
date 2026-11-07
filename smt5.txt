@@ -12,7 +12,7 @@ language: English
 mode: paragraph
 minutes: 10
 words: 300
-code: PAU
+code: PHHC
 
 ### TEST PSSSB 
 name: PSSSB Clerk
