@@ -1,20 +1,3 @@
-### TEST PHHC
-name: Punjab & Haryana High Court
-language: English
-mode: paragraph
-minutes: 10
-words: 300
-code: PHHC
-
-### TEST PAU
-name: Punjab Agriculture Uni. 
-language: English
-mode: paragraph
-minutes: 10
-words: 300
-accuracy: 100
-code: PAU
-
 ### TEST PSSSB 
 name: PSSSB Clerk
 language: English, Punjabi
@@ -34,6 +17,25 @@ minutes: 10
 wpm: 30
 accuracy: 100
 code: CHSL
+
+### TEST PHHC
+name: Punjab & Haryana High Court
+language: English
+mode: paragraph
+minutes: 10
+words: 300
+code: PHHC
+
+### TEST PAU
+name: Punjab Agriculture Uni. 
+language: English
+mode: paragraph
+minutes: 10
+words: 300
+accuracy: 100
+code: PAU
+
+
 
 
 ### Demo English
