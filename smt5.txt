@@ -27,7 +27,8 @@ code: PSSSB
 
 
 ### TEST CHSL
-name: language: English, Punjabi
+name: SSC CHSL
+language: English, Punjabi
 mode: chunk
 minutes: 10
 wpm: 30
