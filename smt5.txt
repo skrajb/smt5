@@ -9,14 +9,7 @@ code: PSSSB
 
 
 
-### TEST CHSL
-name: SSC CHSL
-language: English, Punjabi
-mode: chunk
-minutes: 10
-wpm: 30
-accuracy: 100
-code: CHSL
+
 
 ### TEST PHHC
 name: Punjab & Haryana High Court
@@ -25,6 +18,15 @@ mode: paragraph
 minutes: 10
 words: 300
 code: PHHC
+
+### TEST CHSL
+name: SSC CHSL
+language: English, Punjabi
+mode: chunk
+minutes: 10
+wpm: 30
+accuracy: 100
+code: CHSL 
 
 ### TEST PAU
 name: Punjab Agriculture Uni. 
