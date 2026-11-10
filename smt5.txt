@@ -6,14 +6,14 @@ minutes: 10
 words: 300
 code: PHHC
 
-### TEST PHHC
+### TEST PAU
 name: Punjab Agriculture Uni. 
 language: English
 mode: paragraph
 minutes: 10
 words: 300
 accuracy: 100
-code: PHHC
+code: PAU
 
 ### TEST PSSSB 
 name: PSSSB Clerk
