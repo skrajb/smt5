@@ -1,0 +1,22 @@
+Smartech Typing Tutor - STUDY MATERIAL file (upload it to GitHub next to your exercises file, name: materials.txt)
+
+It fills the "Typing Books & Study Material" and "Video Lessons" pages. One block per item:
+  ### Book | Title of the book or notes       (Book = shown under Books & Study Material)
+  ### Video | Title of the recorded class      (Video = shown under Video Lessons)
+  url: https://...                             (required - a PDF, a web page, a YouTube link ...)
+  desc: one line about it                      (optional)
+  language: English                            (optional - English, Punjabi or Hindi)
+  tag: Free                                    (optional - a small label on the card)
+
+Example (remove the spaces before ### to use it):
+    ### Book | Typing Basics for Exams
+    url: https://example.com/typing-basics.pdf
+    desc: Home row to speed building, with practice tables.
+    language: English
+
+    ### Video | Home Row in 10 Minutes
+    url: https://www.youtube.com/watch?v=XXXXXXXXXXX
+    desc: Recorded class
+    language: Punjabi
+
+Anything above the first ### line is ignored. The links open in the student's browser.

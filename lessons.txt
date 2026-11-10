@@ -1,0 +1,282 @@
+Smartech Typing Tutor - LESSONS file (upload it to GitHub next to your exercises file, name: lessons.txt)
+
+Every lesson is one block, in the order it should appear in the course. The numbers 1, 2, 3 ... are added by the app.
+  ### <Language> | <Lesson title>         Language = English, Punjabi or Hindi
+  count: 120                              (optional) how many words one practice contains, default 100
+  the words of the lesson, separated by spaces - line breaks are fine, so long lists can be wrapped
+
+A language that is not in this file keeps the lessons built into the app.
+Anything above the first ### line is ignored (use it for notes).
+Students get changes the next time the app is online (a few minutes at most), or at once with the Update button.
+
+### English | Home Row
+count: 120
+all ask has dad sad had lad lag add flag gas fall hall jaals dada jaffa alaska lass alfa kafla dass dash
+flash skaff lakh shall gash glass alas half salad glad slag kala salsa jags
+
+### English | Top Row
+count: 120
+wise fly tap yak see ill oil owl thats wife keep safe fail less tell leaf quill post joes with ugly skill
+silk risk hair first kids user shell offer tea sail seal life lead desk dull that frogs alert park faith its
+lets early eagle towel whose judge their other eight looks agreed good house fifth word loyal right truth
+youth should laugh would height flight author fight great three tiger useful yellow idiot south style
+dutiful quality large yesterday spiritual
+
+### English | Bottom Row
+count: 120
+fox box boy copycat mat milk nice net next meat lamb zila hint veto lock chart body dr doze zero neck need
+xray navy moon meet value zebra mike quick sixth burn turn smell limbs some chase maps prison defects fabric
+print number action humble nation major exactly cut cross purpose charity define miracle brought young
+caught many universe manner money margin smooth valley zenith liable knees narrow boxing vacant current
+nature magic
+
+### English | Mix Home, Top & Bottom Row
+count: 100
+dad wise fox lag skill moon glass keep navy flash tiger quick sad shell fabric lakh youth value meat smooth
+fight burn half judge copycat money dr loyal magic number fall user zebra faith nature hall risk nation cut
+offer salsa truth major maps valley early define young action milk shall great cross sixth prison seal knees
+author manner purpose flag gas alert park leaf desk dull hair first kids shell offer tea sail life lead that
+frogs eight looks agreed good house fifth word right laugh would height flight three useful yellow south
+style quality large yesterday spiritual box boy mat nice net next lamb hint lock chart body doze zero neck
+need xray meet quick burn turn smell limbs some chase maps defects print number action humble nation exactly
+cut purpose charity define miracle brought young caught many universe manner money margin smooth valley
+zenith liable knees narrow boxing vacant current nature magic
+
+### English | Number Row
+count: 90
+357 405 999 2024 456 607 2 304 9090 708 852 321 000 21 951 7 444 506 65 111 8080 555 901 34 100 123 78 8 5
+789 102 0 43 987 6060 333 1999 654 90 203 777 87 4 1 5678 12 6 9 2001 809 159 2025 222 7070 3 666 888 56
+1234 09
+
+### English | Symbols
+count: 120
+! @ # $ % ^ & * ( ) - =
+
+### English | Home Row with Shift
+count: 90
+Dada Alfas Alaska Salsa Gash Slash Hash Dalda Hall Skaff Slag Glass Da Khaf Dallas Khallas Falk Sa Jaal
+Shalk Alfa Dall Shall Halk Kafla Ga Sallad Slags Jaffa Lass Dass Lag Add Flag Gas Fall
+
+### English | Top Row with Shift
+count: 100
+Aid Slide Flies Pares Safe Yule Ride Dialogue Jealousy Tailor Europe Quetta Hillary Sleek Guide Leaf People
+Equip Earth Jupiter Roses Yellow Flight Glory Slowly Author Tuesday Youth April Lily Tulip Tiger Lotus
+Growth Ganges Goal Hour Regard Follow Diesel Fiddle Failed Pride Feature Years Result Farewell Foods
+
+### English | Bottom Row with Shift
+count: 120
+India British Kabir Venus Needle Foreign Cycle Mainly Million Nation Oxford Calcutta Nanak Scale Nylon
+Beggar Zigs Negative Over Nature Wizard Inkpot Remington Switzerland United Studies Lovely Smooth Opinion
+Onion Query Zealous Tundra Village Literacy Education Policies Country Machine Hungry Diwali Beautiful
+Knowledge Blessing Amazing
+
+### English | Mixed Words with Shift
+count: 120
+Dada Aid India Alaska Slide British Salsa Flies Kabir Gash Safe Venus Slash Yule Needle Hash Ride Foreign
+Dalda Dialogue Cycle Hall Jealousy Mainly Skaff Tailor Million Slag Europe Nation Glass Quetta Oxford Dallas
+Hillary Calcutta Khallas Sleek Nanak Falk Guide Scale Jaal Leaf Nylon Shalk People Beggar Alfa Equip Zigs
+Dall Earth Negative Shall Jupiter Over Halk Roses Nature Kafla Yellow Wizard Ga Flight Inkpot Sallad Glory
+Remington Slags Slowly Switzerland Jaffa Author United Lass Tuesday Studies Dass Youth Lovely Lag April
+Smooth Add Lily Opinion Flag Tulip Onion Gas Tiger Query Fall Lotus Zealous Growth Tundra Ganges Village
+Goal Literacy Hour Education Regard Policies Follow Country Diesel Machine Fiddle Hungry Failed Diwali Pride
+Beautiful Feature Knowledge Years Blessing Result Amazing Farewell Foods
+
+### English | Common Misspelt Words
+count: 120
+the of and We we are has Then then there thus were the after had Must The and was were their there where
+which Would could should about again every first great right three piece friend said does don't can't won't
+Your you're whose loose lose Quite quiet Until truly among begin chose known women woman meant month music
+world house Young Study money Heart break Class Watch Laugh learn Write wrong light short small table chair
+field build Basic phone place group other Never often maybe after water Power Music Happy smile green brown
+black white
+
+### English | Mixed Words
+count: 150
+all ask has dad sad had lad lag add flag gas fall hall jaals dada jaffa alaska lass alfa kafla dass dash
+flash skaff lakh shall gash glass alas half salad glad slag kala salsa jags wise fly tap yak see ill oil owl
+thats wife keep safe fail less tell leaf quill post joes with ugly skill silk risk hair first kids user
+shell offer tea sail seal life lead desk dull that frogs alert park faith its lets early eagle towel whose
+judge their other eight looks agreed good house fifth word loyal right truth youth should laugh would height
+flight author fight great three tiger useful yellow idiot south style dutiful quality large yesterday
+spiritual fox box boy copycat mat milk nice net next meat lamb zila hint veto lock chart body dr doze zero
+neck need xray navy moon meet value zebra mike quick sixth burn turn smell limbs some chase maps prison
+defects fabric print number action humble nation major exactly cut cross purpose charity define miracle
+brought young caught many universe manner money margin smooth valley zenith liable knees narrow boxing
+vacant current nature magic Dada Alfas Alaska Salsa Gash Slash Hash Dalda Hall Skaff Slag Glass Da Khaf
+Dallas Khallas Falk Sa Jaal Shalk Alfa Dall Shall Halk Kafla Ga Sallad Slags Jaffa Lass Dass Lag Add Flag
+Gas Fall Aid Slide Flies Pares Safe Yule Ride Dialogue Jealousy Tailor Europe Quetta Hillary Sleek Guide
+Leaf People Equip Earth Jupiter Roses Yellow Flight Glory Slowly Author Tuesday Youth April Lily Tulip Tiger
+Lotus Growth Ganges Goal Hour Regard Follow Diesel Fiddle Failed Pride Feature Years Result Farewell Foods
+India British Kabir Venus Needle Foreign Cycle Mainly Million Nation Oxford Calcutta Nanak Scale Nylon
+Beggar Zigs Negative Over Nature Wizard Inkpot Remington Switzerland United Studies Lovely Smooth Opinion
+Onion Query Zealous Tundra Village Literacy Education Policies Country Machine Hungry Diwali Beautiful
+Knowledge Blessing Amazing
+
+### Punjabi | ਹੋਮ ਲਾਈਨ
+count: 120
+ਪਰ ਕਰ ਤਕ ਤਪ ਚੋਰ ਪਰਤ ਪਰਕੋ ਕਰੋ ਰੋਕ ਰੇਤ ਚੇਤ ਰੋਚਕ ਰੋਕੋ ਕਿ ਰੁਤ ਚਤਰ ਰਕਤ ਚੇਤਕ ਕਿਰਤ ਚਿਪਕ ਪਰਕ ਟਚ ਟਿਕ ਰਿਕਤ ਪਰਕ ਰਿਪੋਰਟ
+ਚੋਕਰ ਟੋਰਚ ਚਰਚ ਟਿਕਟ ਤੁਰ ਚਟਪਟ ਕੋਟ ਕਿਕ ਟੇਪ
+
+### Punjabi | ਉੱਪਰਲੀ ਲਾਈਨ
+count: 120
+ਕਪ ਹਦ ਦਾਤਾ ਹਾਜਰ ਜਾਗਰ ਕੌਰ ਡੋਰ ਡੀ ਡੋਗਰ ਗਤੀ ਬਚੀ ਦੀਪ ਬਾਹੀ ਹਿਪ ਬਾਜੀ ਦਰਜੀ ਦੀਪਕ ਪਿਤਾ ਤੋਤਾ ਪੋਤੀ ਦੂਰੀ ਦੁਹਰੀ ਬੋਰਡ ਪੈਰ
+ਜੇਬ ਗੌਦ ਪੌਦਾ ਜਦ ਟੋਟਾ ਬਾਡੀਗਾਰਡ ਗੌਰੀ ਜਾਦੂਗਰ ਗਰਾਹਕ ਦਾਦੀ ਦਰਦ ਗਦਰ ਡਰਪੋਕ ਪੀਰ ਪਰਬਤ ਬਰਾਬਰ ਜੇਕਰ ਹੀਰਾ ਗਿਟਾਰ ਕਿਤਾਬ ਗੈਰ
+ਦਰਗਾਹ ਗਰੀਬ ਪਾਰਟੀ ਬਗਦਾਦ ਗਰਾਹੀ ਰੁਤਬਾ ਚਾਰਜ ਜਾਗਰੂਕਤਾ ਡਾਕੂ ਚਾਕੂ ਬੋਰੀ
+
+### Punjabi | ਹੇਠਲੀ ਲਾਈਨ
+count: 120
+ਨਾਲ ਵੀ ਵਿਚ ਰਕਮ ਚੰਦਾ ਰੂਪ ਲਿਵਾਸ ਮਾਨਵ ਹੀਰਾ ਮਕਾਨ ਕਿਰਨ ਕਿਸੇ ਸਲਾਹ ਵੋਟ ਮਾਨ ਮਹਾਨ ਹਿਸਾਬ ਹੁਕਮ ਸਕਦਾ ਵਿਚਾਰ ਹਿੰਦ ਵੀਰ
+ਵੀਰਤਾ ਪੰਜਾਬੀ ਨੀਯਤ ਬੁਲਟ ਕਾਹਲੀ ਵਾਦੀ ਸਰਕਾਰ ਚਮਤਕਾਰ ਨਮੂਨਾ ਸਲਾਦ ਮਹਿਕ ਯੋਜਨਾ ਕੀਮਤ ਮੋਹਿਤ ਜਯ ਪੰਜ ਵਿਕਾਸ ਸਪੀਕਰ ਵਹਿਮ
+ਸਤਿਕਾਰ ਸਮਾਜ ਸਹੂਲਤ ਸੰਪਰਕ ਸੈਮ ਸੰਗ ਹਰਮਨ ਮਹਿਸੂਸ ਰੁਕਾਵਟ ਸਮੂਹ ਪੰਡਿਤ ਜੀਵਨ ਸਨਮਾਨਿਤ ਕੂਲਰ ਬਿਜਲੀ ਬੰਦੂਕ ਤਾਪਮਾਨ ਮੌਸਮ
+ਸਰੀਰਕ ਹੈਰਾਨੀ ਜਨਕ ਸੰਕਟ ਦੇਵਤਾ ਪਰਯੋਗ ਮੁਕਾ ਬਲਾ ਸੈਲੰਡਰ ਸਮੌਸਾ
+
+### Punjabi | ਹੋਮ, ਉੱਪਰਲੀ ਤੇ ਹੇਠਲੀ ਲਾਈਨ ਸ਼ਬਦ
+count: 100
+ਪਰ ਕਰ ਨਾਲ ਵੀ ਕਪ ਹਦ ਰਕਮ ਚੋਰ ਦੀਪ ਮਕਾਨ ਤਕ ਤਪ ਦਾਤਾ ਹਾਜਰ ਚੰਦਾ ਰੂਪ ਕਿਰਨ ਸਲਾਹ ਵੋਟ ਮਾਨ ਪਰਤ ਪਰਕੋ ਕਰੋ ਜਾਗਰ ਕੌਰ ਲਿਵਾਸ
+ਮਾਨਵ ਹੀਰਾ ਮਹਾਨ ਹੁਕਮ ਰੋਕ ਰੇਤ ਚੇਤ ਡੋਰ ਡੀ ਡੋਗਰ ਸਕਦਾ ਵਿਚਾਰ ਹਿੰਦ ਵੀਰ ਰੋਚਕ ਰੋਕੋ ਕਿ ਗਤੀ ਬਚੀ ਦੀਪਕ ਵੀਰਤਾ ਪੰਜਾਬੀ ਨੀਯਤ
+ਬੁਲਟ ਰੁਤ ਚਤਰ ਰਕਤ ਬਾਹੀ ਹਿਪ ਬਾਜੀ ਕਾਹਲੀ ਵਾਦੀ ਸਰਕਾਰ ਚਮਤਕਾਰ ਚੇਤਕ ਕਿਰਤ ਚਿਪਕ ਦਰਜੀ ਪਿਤਾ ਤੋਤਾ ਨਮੂਨਾ ਸਲਾਦ ਮਹਿਕ ਯੋਜਨਾ
+ਪਰਕ ਟਚ ਟਿਕ ਪੋਤੀ ਦੂਰੀ ਦੁਹਰੀ ਕੀਮਤ ਮੋਹਿਤ ਪੰਜ ਵਿਕਾਸ ਰਿਕਤ ਪਰਕ ਰਿਪੋਰਟ ਬੋਰਡ ਪੈਰ ਜੇਬ ਸਪੀਕਰ ਵਹਿਮ ਸਤਿਕਾਰ ਸਮਾਜ ਚੋਕਰ
+ਟੋਰਚ ਚਰਚ ਗੌਦ ਪੌਦਾ ਜਦ ਸਹੂਲਤ ਸੰਪਰਕ ਸੰਗ ਹਰਮਨ ਟਿਕਟ ਤੁਰ ਚਟਪਟ ਟੋਟਾ ਬਾਡੀਗਾਰਡ ਗੌਰੀ ਮਹਿਸੂਸ ਰੁਕਾਵਟ ਸਮੂਹ ਪੰਡਿਤ ਕੋਟ ਕਿਕ
+ਟੇਪ ਜਾਦੂਗਰ ਗਰਾਹਕ ਦਾਦੀ ਜੀਵਨ ਸਨਮਾਨਿਤ ਕੂਲਰ ਬਿਜਲੀ ਦਰਦ ਗਦਰ ਡਰਪੋਕ ਬੰਦੂਕ ਤਾਪਮਾਨ ਮੌਸਮ ਸਰੀਰਕ ਸੰਕਟ ਦੇਵਤਾ ਪਰਯੋਗ
+
+### Punjabi | ਸ਼ਿਫਟ ਬਟਨ ਨਾਲ ਹੋਮ ਲਾਈਨ
+count: 90
+ਠਪ ਟਪ ਤੜ ਫੜ ਅੜ ਏਕ ਓਮ ਉਕਤ ਏਕਤਾ ਠਰ ਛਟ ਥੂੜ ਖੜਕ ਰੜਕ ਰਬੜ ਇਟ ਪੁਰਖ ਛਪਰ ਇਤਰ ਕੜਕ ਅਰਕ ਕਾਰ ਉਰਫ ਰੋਕੜ ਇਮਲੀ ਸਥਿਰ ਸਥਾਨ ਕਥਨ
+ਖਿੜਕੀ ਜਕੜ ਉਚਿਚਤਾ ਅਸੀ ਏਜੰਸੀ ਇਮਤਿਹਾਨ ਸੜਕ ਠੇਲਾ ਓਕੜ ਲੜਕੀ ਅਨਮੋਲ ਖਤਰਨਾਕ ਛੂਤਛਾਤ ਖੰਡਰ ਸੈਲੰਡਰ ਪਦਾਰਥ ਸੁਖਾਲਾ ਵਿਅਕਤੀ
+ਏਥਿਕਸ ਫੈਲਾਉ ਉਬਾਲ ਚੌਥੀ ਥਿੰਦਾ ਮੁਖਤਾਰ ਅਫਵਾਹ ਉਬਾਲ ਫੈਸਲਾ ਠੰਡਕ
+
+### Punjabi | ਸ਼ਿਫਟ ਬਟਨ ਨਾਲ ਉੱਪਰਲੀ ਲਾਈਨ
+count: 120
+ਔਕੜ ਆਰੀ ਈਰਖਾ ਧੋਬੀ ਆਖੇ ਆੜੂ ਝਾੜੂ ਝਗੜਾ ਢਾਈ ਭਗਤ ਭਰਾ ਢਾਕਾ ਐਨਕ ਆਈ ਘੜਾ ਕਿੰਞ ਘਰਾਚੋ ਘੜੀ ਥਿੰਦਾ ਔਰਤ ਘਾਉ ਐਗਰੀ ਥੈਲਾ ਘਗਰ
+ਊਜ ਇੰਞ ਬਾਊ ਬਾਈ ਉਚਿਚਤਾ ਭੌਲਾ ਧੀਰਜ ਧੰਨਵਾਦ ਵੰਝਲੀ ਘੋੜਾ ਢੂੰਡ ਈਦ ਊਰਜਾ ਊਠ ਢੋਲ ਔਜਾਰ ਆਦਮੀ ਧਰਤੀ
+
+### Punjabi | ਸ਼ਿਫਟ ਬਟਨ ਨਾਲ ਹੇਠਲੀ ਲਾਈਨ
+count: 90
+ਘੇਰਦਾ ਞਤਨ ਖਿੰਘਰ ਡਾਕਘਰ ਕੰਙਲ ਝੰਜੋੜ ਲੰਬਾਈ ਸੁਭਾਅ ਸੁਧੀਰ ਧਮਾਕਾ ਆਦਤ ਸੰਙ ਪਿਘਲ ਆਗਰਾ ਪਿਛੌਕੜ ਘੁਮਿਆਰ ਈਨਾਮ ਈਕਾਈ ਘੌਲ ਊਚਾਈ
+ਢੋਲਕ ਮਾਂ ਛਾਂ ਜਾਂ ਝਾਵਾਂ ਇਟਾਂ ਵਾਂਝਾ ਛਣ ਪੌਣ ਪਾਣੀ ਸ਼ੰਖ ਨਮਕ ਖਣਜ ਮਾਣਕ ਮੰਨਣਾ ਲਕਸ਼ ਗਿਣਤੀ ਸ਼ਲਗਮ ਸ਼ੌਰ ਯੂਨੀਕੋਡ ਲਿਸ਼ਕਾਰਾ
+ਇਲਾਵਾ ਨਿਰਮਾਣ ਵਿਸ਼ਵਾਸ ਉਂਗਲਾਂ ਓਨਾਂ ੲਰਾਦਾ ਲੌਂਗ ੲਨਸਾਨ ਪਹਿਚਾਣ ਕਠਣਾਈ ਦੁਗਣੀ ਗੁਣਾ ਸ਼ਹਿਦ ਦਿਸ਼ਾ ਹੋਸ਼ ਦਹਿਸ਼ਤ ਬੁਰਸ਼ ਪੁਣਛਾਣ
+ਊਣਾਂ ਸ਼ਿਫਟ ਊਂਙਣਾ ਸ਼ੁਧ ਸਿਆਣਪ ਇੰਜਣ ਸ਼ਬਦ ਸ਼ਰਧਾ ਖੇਡਾਂ ਸ਼ਕਤੀ ਦੂਸ਼ਿਤ ੲਮਤਿਹਾਨ ਸ਼ੁਰੂਆਤ ਮਹਾਂਭਾਰਤ ਨਾਲ਼ ਜਾਂਚ ਤਮਾਸ਼ਾ ਇਸ਼ਨਾਨ
+ਸਕੋਲਰਸ਼ਿਪ ਹੌਲ਼ੀ ਲ਼ਕੜੀ ੲਮਾਨਦਾਰ ੲਤਿਹਾਸ
+
+### Punjabi | ਹੋਮ,ਉੱਪਰਲੀ ਤੇ ਹੇਠਲੀ ਲਾਈਨ ਸ਼ਿਫਟ ਨਾਲ
+count: 100
+ਠਪ ਟਪ ਅੜ ਏਕ ਓਮ ਔਕੜ ਆਰੀ ਈਰਖਾ ਧੋਬੀ ਆਖੇ ਤੜ ਫੜ ਉਕਤ ਏਕਤਾ ਠਰ ਝਾੜੂ ਝਗੜਾ ਭਰਾ ਘੜਾ ਘੜੀ ਛਟ ਥੂੜ ਖੜਕ ਰੜਕ ਰਬੜ ਔਰਤ ਘਾਉ ਥੈਲਾ
+ਘਗਰ ਊਜ ਇਟ ਪੁਰਖ ਛਪਰ ਇਤਰ ਕੜਕ ਇੰਞ ਬਾਊ ਬਾਈ ਭੌਲਾ ਧੀਰਜ ਅਰਕ ਕਾਰ ਉਰਫ ਰੋਕੜ ਇਮਲੀ ਧੰਨਵਾਦ ਘੋੜਾ ਢੋਲ ਔਜਾਰ ਆਦਮੀ ਸਥਿਰ ਸਥਾਨ
+ਕਥਨ ਖਿੜਕੀ ਜਕੜ ਧਰਤੀ ਈਦ ਊਰਜਾ ਊਠ ਢੂੰਡ ਉਚਿਚਤਾ ਅਸੀ ਏਜੰਸੀ ਇਮਤਿਹਾਨ ਸੜਕ ਘੇਰਦਾ ਲੰਬਾਈ ਸੁਭਾਅ ਸੁਧੀਰ ਧਮਾਕਾ ਠੇਲਾ ਓਕੜ ਲੜਕੀ
+ਅਨਮੋਲ ਖਤਰਨਾਕ ਆਦਤ ਸੰਙ ਪਿਘਲ ਆਗਰਾ ਈਨਾਮ ਛੂਤਛਾਤ ਖੰਡਰ ਸੈਲੰਡਰ ਪਦਾਰਥ ਸੁਖਾਲਾ ਈਕਾਈ ਊਚਾਈ ਢੋਲਕ ਮਾਂ ਛਾਂ ਵਿਅਕਤੀ ਏਥਿਕਸ
+ਫੈਲਾਉ ਉਬਾਲ ਚੌਥੀ ਜਾਂ ਝਾਵਾਂ ਇਟਾਂ ਪੌਣ ਪਾਣੀ ਮੁਖਤਾਰ ਅਫਵਾਹ ਫੈਸਲਾ ਠੰਡਕ ਸ਼ੰਖ ਨਮਕ ਮਾਣਕ ਲਕਸ਼ ਗਿਣਤੀ ਸ਼ਲਗਮ ਸ਼ੌਰ ਯੂਨੀਕੋਡ
+ਲਿਸ਼ਕਾਰਾ ਨਿਰਮਾਣ ਵਿਸ਼ਵਾਸ ਉਂਗਲਾਂ ਲੌਂਗ ਪਹਿਚਾਣ ਕਠਣਾਈ ਦੁਗਣੀ ਗੁਣਾ ਸ਼ਹਿਦ ਦਿਸ਼ਾ ਹੋਸ਼ ਦਹਿਸ਼ਤ ਬੁਰਸ਼ ਸ਼ਿਫਟ ਸ਼ੁਧ ਸਿਆਣਪ ਇੰਜਣ ਸ਼ਬਦ
+ਸ਼ਰਧਾ ਖੇਡਾਂ ਸ਼ਕਤੀ ਦੂਸ਼ਿਤ ਸ਼ੁਰੂਆਤ ਮਹਾਂਭਾਰਤ ਜਾਂਚ ਤਮਾਸ਼ਾ ਇਸ਼ਨਾਨ
+
+### Punjabi | ਪੈਰੀ ਅੱਖਰਾਂ ਵਾਲੇ ਸ਼ਬਦ
+count: 120
+ਹੜ੍ਹ ਤਰ੍ਹਾਂ ਉਨ੍ਹਾਂ ਜਿਨ੍ਹਾਂ ਪੜ੍ਹਦੇ ਪੜ੍ਹਾਇਆ ਪ੍ਰਕਾਰ ਪ੍ਰਕਾਸ਼ ਪ੍ਰੰਤੂ (ਗ੍ਰਹਿ) ਪ੍ਰੀਤ ਪ੍ਰਿਥਵੀ ਕ੍ਰਿਸ਼ਨ ਪ੍ਰਣਬ ਪ੍ਰਤੀ
+ਪ੍ਰਤੀ-ਸ਼ਤ ਨਾਗ੍ਰਿਕ ਪ੍ਰਬੰਧ ਪ੍ਰਦਾਨ ਗ੍ਰਹਿਸਤੀ ਕ੍ਰਮਚਾਰੀ ਘੱਟ ਸੱਤ ਅੱਠ ਹੱਕ ਹੱਦ ਬੱਚਤ (ਉੱਨਤ) ਬੱਚਿਆ ਮਨੁੱਖ ਗੱਡੀ ਮੱਦਦ
+ਵਿੱਦਿਆ ਪ੍ਰੱਚਲਤ ਸ੍ਵਰ ਪ੍ਰੇਮ ਬਿਸ੍ਵ (ਬਿਸ੍ਵੰਭਰ) ਸ੍ਵੈਮਾਨ ਸ੍ਵੀਕਾਰ ਤ੍ਵ ਪਰਮੇ-ਸ੍ਵਰ ਸ੍ਵੈਜੀ-ਵਨੀ ਧੱਬਾ ਸੈੱਟ ਅੜਿੱਕਾ ਚੜ੍ਹਦਾ
+ਤ੍ਰਿੰਞਣ ਪ੍ਰੇਰਨਾ ਪਵਿੱਤਰ ਫੁੱਲ ਪ੍ਰਭਾਵ ਅਮ੍ਰਿੰਤਾ ਉੱਥੇ ਉੱਪਰ ਗ੍ਰੰਥ ਸੱਭਿਆਚਾਰ ਸੱਤਿਆਗ੍ਰਹਿ
+
+### Punjabi | ਪੈਰੀ ਬਿੰਦੀ ਵਾਲੇ ਸ਼ਬਦ
+count: 120
+ਜ਼ਹਾਜ ਫ਼ਲ ਖ਼ੁਸ਼ ਸਜ਼ਾ ਗ਼ੁਲਾਮ ਸਫ਼ਾਈ ਜ਼ਿਕਰ ਜ਼ੋਕਰ ਲਿਸ਼ਕਾਰਾ ੳਰਜਾ ਜ਼ੂਸ ੳਸਾਰ ਜ਼ੋਰ ਕਾਗਜ਼ ਜ਼ਫ਼ਰਨਾਮਾ ਗ਼ੁਬਾਰਾ ਜ਼ੰਜੀਰ ਰੁਜ਼ਗਾਰ ਅਖ਼ਬਾਰ ਖ਼ਬਰਾਂ
+ਸਬਜ਼ੀ ੳਣਮੱਤ ਸੂਫ਼ੀ ਫ਼ਲਸਫ਼ੇ ਨਜ਼ਰ ਟੈਲੀਵਿਜ਼ਨ ਫ਼ਸਲ ਮਜ਼ਾਰ ਖ਼ਰਗੋਸ਼ ਰਫ਼ਤਾਰ ਜ਼ੁਰਾਬ ੳਲਝਣ ਮਜ਼ੂਮਨ ਸਾਫ਼ ੳਲੰਬਾ
+
+### Punjabi | ਨੰਬਰ ਲਾਈਨ
+count: 150
+੧੨੩੪੫ ੦੯੮੭੬ ੧੨੩੪੫ ੦੯੮੭੬ ੧੨੩੪੫ ੦੯੮੭੬ ੫੪੯੦੧ ੨੩੬੧੮ ੫੪੯੦੧ ੯੫੩੦੪ ੬੮੩੧੫ ੪੦੫੧੭ ੦੯੮੭੬ ੫੪੯੦੧ ੧੨੩੪੫ ੬੮੩੧੫ ੫੪੯੦੧ ੨੩੬੧੮
+
+### Punjabi | ਪੰਜਾਬੀ ਵਰਣਮਾਲਾ
+count: 150
+ਅ ਆ ਇ ਈ ਉ ਊ ਏ ਐ ਓ ਔ ਕ ਖ ਗ ਘ ਙ ਚ ਛ ਜ ਝ ਞ ਟ ਠ ਡ ਢ ਣ ਤ ਥ ਦ ਧ ਨ ਪ ਫ ਬ ਭ ਮ ਯ ਰ ਲ ਵ ੜ ਸ਼ ਸ ਹ ਖ਼ ਗ਼ ਜ਼ ਫ਼ ਲ਼
+
+### Punjabi | ਸਾਰੀਆਂ ਲਾਈਨਾਂ ਦੇ ਸ਼ਬਦਾਂ ਦੀ ਟਾਈਪਿੰਗ ਪ੍ਰੈਕਟਿਸ
+count: 100
+ਪਰ ਕਰ ਤਕ ਚੋਰ ਦੀਪ ਮਕਾਨ ਕਪ ਹਦ ਰਕਮ ਚੰਦਾ ਦਾਤਾ ਹਾਜਰ ਰੂਪ ਕਿਰਨ ਸਲਾਹ ਵੋਟ ਮਾਨ ਨਾਲ ਵੀ ਵਿਚ ਜਾਗਰ ਕੌਰ ਲਿਵਾਸ ਮਾਨਵ ਹੀਰਾ
+ਮਹਾਨ ਹੁਕਮ ਵਿਚਾਰ ਹਿੰਦ ਵੀਰ ਰੋਕ ਰੇਤ ਚੇਤ ਗਤੀ ਬਚੀ ਦੀਪਕ ਵੀਰਤਾ ਪੰਜਾਬੀ ਨੀਯਤ ਬੁਲਟ ਠਪ ਟਪ ਅੜ ਏਕ ਓਮ ਉਕਤ ਝਾੜੂ ਭਰਾ ਘੜਾ ਘੜੀ
+ਤੜ ਫੜ ਏਕਤਾ ਠਰ ਖੜਕ ਰਬੜ ਔਰਤ ਘਾਉ ਥੈਲਾ ਘਗਰ ਇਟ ਪੁਰਖ ਇਤਰ ਕੜਕ ਬਾਊ ਬਾਈ ਭੌਲਾ ਧੀਰਜ ਧੰਨਵਾਦ ਆਦਮੀ ਔਕੜ ਆਰੀ ਈਰਖਾ ਧੋਬੀ ਆਖੇ
+ਆੜੂ ਝਗੜਾ ਢਾਕਾ ਐਨਕ ਘੋੜਾ ਘੇਰਦਾ ਲੰਬਾਈ ਸੁਭਾਅ ਸੁਧੀਰ ਧਮਾਕਾ ਆਦਤ ਪਿਘਲ ਈਨਾਮ ਊਚਾਈ ਪਾਣੀ ਮਾਂ ਛਾਂ ਸ਼ੰਖ ਨਮਕ ਮਾਣਕ ਲਕਸ਼ ਗਿਣਤੀ
+ਸ਼ਲਗਮ ਸ਼ੌਰ ਯੂਨੀਕੋਡ ਹੜ੍ਹ ਤਰ੍ਹਾਂ ਉਨ੍ਹਾਂ ਜਿਨ੍ਹਾਂ ਪੜ੍ਹਦੇ ਪ੍ਰਕਾਰ ਪ੍ਰਕਾਸ਼ ਪ੍ਰਤੀ ਨਾਗ੍ਰਿਕ ਪ੍ਰਬੰਧ ਘੱਟ ਸੱਤ ਅੱਠ ਹੱਕ ਮਨੁੱਖ
+ਗੱਡੀ ਮੱਦਦ ਵਿੱਦਿਆ ਪ੍ਰੇਮ ਸ੍ਵੈਮਾਨ ਜ਼ਹਾਜ ਫ਼ਲ ਖ਼ੁਸ਼ ਸਜ਼ਾ ਗ਼ੁਲਾਮ ਜ਼ਿਕਰ ਜ਼ੋਰ ਕਾਗਜ਼ ਅਖ਼ਬਾਰ ਖ਼ਬਰਾਂ ਸਬਜ਼ੀ ਨਜ਼ਰ ਟੈਲੀਵਿਜ਼ਨ ਫ਼ਸਲ ਮਜ਼ਾਰ
+ਰਫ਼ਤਾਰ ਜ਼ੁਰਾਬ ਸਾਫ਼ ੳਲੰਬਾ
+
+### Hindi | मध्य पंक्ति
+count: 120
+कर तक पट करक चोक करु करो करत पटक चतर चेत रोको टोरच रेत परको चेतक रिकत चोकर चरच कोच कोट तुर किक टिकट रोचक
+चतुर पेट परत चोर टिक चटपट टच रिपोरट पर कटर तोर किरत रुत तप रकत चिपक टेप टपक टकटक टर रोते टिचर चिट चकर
+
+### Hindi | ऊपरी पंक्ति
+count: 120
+कप हद दाता दूरी हाजर कौर डोर डोगर रगड़ गती डगर बाजा दीप बाही दरजी दीपक पिता तोता पोती जिगर गराही डॉग बहुत
+जुराब कूदता चाकू बगदाद दोहरी बगीचा जेब गौरी गराहक दरद पैर गौद गीता गरीब बराबर हीरा रुतबा दरगाह गिटार डॉकू
+चारू बोरी जादूगर डरपोक जागरूकता रूप हरेक दादा दरोगा गदर रोहित रीतिका चाचा रिचारज कचोरी चैकर करीब जगदीप बरात
+
+### Hindi | निचली पंक्ति
+count: 120
+वन रकम करम चंदा कितने किसे सलाह हिसाब हंसी सही सहारा मीटर नाम मोहित लोरी योजना गदर नीयत करीब सवाल हुकम नौकर
+समौसा गयारह केसरी साहस सिकंदर सरकार देवीका कीमत समूह समुंदर कहानी सोमवार बिजली विचार मुकाबला वीरता जीवन
+देवता दबाव सहयोग पूजा निमन पैमाना पंजाब नाटक सादगी मेहनत लंगूर गुलाब नंदनी वीरता कोमल
+
+### Hindi | मध्य, ऊपरी एवं निचली पंक्ति के शब्द
+count: 100
+कर तक पट करक चोक करु करो करत पटक चतर चेत रोको टोरच रेत परको चेतक रिकत चोकर चरच कोच कोट तुर किक टिकट रोचक
+चतुर पेट परत चोर टिक चटपट टच रिपोरट पर कटर तोर किरत रुत तप रकत चिपक टेप टपक टकटक टर रोते टिचर चिट चकर कप हद
+दाता दूरी हाजर कौर डोर डोगर रगड़ गती डगर बाजा दीप बाही दरजी दीपक पिता तोता पोती जिगर गराही डॉग बहुत जुराब
+कूदता चाकू बगदाद दोहरी बगीचा जेब गौरी गराहक दरद पैर गौद गीता गरीब बराबर हीरा रुतबा दरगाह गिटार डॉकू चारू
+बोरी जादूगर डरपोक जागरूकता रूप हरेक दादा दरोगा गदर रोहित रीतिका चाचा रिचारज कचोरी चैकर करीब जगदीप बरात वन
+रकम करम चंदा कितने किसे सलाह हिसाब हंसी सही सहारा मीटर नाम मोहित लोरी योजना गदर नीयत करीब सवाल हुकम नौकर
+समौसा गयारह केसरी साहस सिकंदर सरकार देवीका कीमत समूह समुंदर कहानी सोमवार बिजली विचार मुकाबला वीरता जीवन
+देवता दबाव सहयोग पूजा निमन पैमाना पंजाब नाटक सादगी मेहनत लंगूर गुलाब नंदनी वीरता कोमल
+
+### Hindi | शिफ्ट कुंजी सहित मध्य पंक्ति
+count: 90
+औखली ऐनक आम डांचा ढोंग इधर घरेलू आधारित ईलाज भोजन घटिया सिंचाई ऊंचाई आवाज इंडिया आंदोलन आकार गुरू अलीगढ़
+कुंभ भोपाल आसन बूझारत साधना ढोलक मधुर भागलपुर इलाहाबाद चौधरी लाभ अमरूद चंडीगढ घबराहट लगभग भेद धनीया धरती
+आनंद रौंगटे इतिहास भालू घाटी झंकार मझधार ईरान आगमन बंधन आरती अधिकतम आरी धोबी झाड़ू झंडा भगत समझदार ऑक बुराई
+झील ऊन साधू पंडा भूरा कभी छोटी डंडा घर
+
+### Hindi | शिफ्ट कुंजी सहित ऊपरी पंक्ति
+count: 120
+शाही काश कोशिश कोष शोक आँख माँ शिकारी दिनाँक झंकार टंकण गणित मशीन दिशा ढकण पोषाक भाषण कारण ढंग शलगम शोकीन
+पाठशाला निमंतरण आभूषण परिणाम उदाहरण हरियाणा हमेशा रमेश सुरेश विषय उपकरण देशहित शाहुकार हुनकार शेष शामिल
+घोषणा शरबत डॉलर कैश शांति कोण अँधेरा खुशी अभिलाशा पीयूष काँच कलश बाँटना औषधि शीला शीमला पशु गुण
+
+### Hindi | शिफ्ट कुंजी सहित निचली पंक्ति
+count: 90
+शाही काश कोशिश कोष शोक आँख माँ शिकारी दिनाँक झंकार टंकण गणित मशीन दिशा ढकण पोषाक भाषण कारण ढंग शलगम शोकीन
+पाठशाला निमंतरण आभूषण परिणाम उदाहरण हरियाणा हमेशा रमेश सुरेश विषय उपकरण देशहित शाहुकार हुनकार शेष शामिल
+घोषणा शरबत डॉलर कैश शांति कोण अँधेरा खुशी अभिलाशा पीयूष काँच कलश बाँटना औषधि शीला शीमला पशु गुण
+
+### Hindi | शिफ्ट कुंजी सहित सभी पंक्तियाँ
+count: 100
+शाही काश कोशिश कोष शोक आँख माँ शिकारी दिनाँक झंकार टंकण गणित मशीन दिशा ढकण पोषाक भाषण कारण ढंग शलगम शोकीन
+पाठशाला निमंतरण आभूषण परिणाम उदाहरण हरियाणा हमेशा रमेश सुरेश विषय उपकरण देशहित शाहुकार हुनकार शेष शामिल
+घोषणा शरबत डॉलर कैश शांति कोण अँधेरा खुशी अभिलाशा पीयूष काँच कलश बाँटना औषधि शीला शीमला पशु गुण शाही काश
+कोशिश कोष शोक आँख माँ शिकारी दिनाँक झंकार टंकण गणित मशीन दिशा ढकण पोषाक भाषण कारण ढंग शलगम शोकीन पाठशाला
+निमंतरण आभूषण परिणाम उदाहरण हरियाणा हमेशा रमेश सुरेश विषय उपकरण देशहित शाहुकार हुनकार शेष शामिल घोषणा शरबत
+डॉलर कैश शांति कोण अँधेरा खुशी अभिलाशा पीयूष काँच कलश बाँटना औषधि शीला शीमला पशु गुण औखली ऐनक आम डांचा ढोंग
+इधर घरेलू आधारित ईलाज भोजन घटिया सिंचाई ऊंचाई आवाज इंडिया आंदोलन आकार गुरू अलीगढ़ कुंभ भोपाल आसन बूझारत
+साधना ढोलक मधुर भागलपुर इलाहाबाद चौधरी लाभ अमरूद चंडीगढ घबराहट लगभग भेद धनीया धरती आनंद रौंगटे इतिहास भालू
+घाटी झंकार मझधार ईरान आगमन बंधन आरती अधिकतम आरी धोबी झाड़ू झंडा भगत समझदार ऑक बुराई झील ऊन साधू पंडा भूरा
+कभी छोटी डंडा घर
+
+### Hindi | संयुक्ताक्षर अभ्यास
+count: 120
+संज्ञा यज्ञ क्षमता क्षति तयाज्ञ ज्ञाह क्षेत्र अज्ञात ऋण क्षषि ऋणपत्र कक्षा अक्षर सत्रू अंतरिक्ष चरित्र
+नियंत्रण पक्षी दक्षिण शिक्षा परीक्षण वैज्ञानिक पत्र सुरक्षा राक्षस आज्ञा क्षेणी यात्रा पुत्री कक्ष पूर्व
+धर्म सूर्य गर्व कच्चा गाईड कार्ड यथार्थ पदार्थ पद्म क्रम दाईं घृण वृधि ब्रह्मा घृणा निश्र्चय म्मता भुट्टा
+कष्ट वृद्दा वृद्धि ह्मला सच्चा उद्देश्य व्यवहार क्रुणा कृपाण सर्व श्र्वास पर्व क्रिया क्रोध क्रांति नष्ट
+अख्खड़ अम्मा सम्मति बच्चा विश्र्व पक्का मक्खन स्पष्ट अध्ययन विद्या मुख्य व्यंजन संयुक्त वर्णमाला व्यवस्थित
+
+### Hindi | अंक एवं विशेष चिह्न
+count: 150
+०१२३४ ५६७८९ १२३४५ ९८७६५ १०२९३ ४५६७८ ९०१२३ ८७६५४ २३४५६ ७८९०१ १११११ २२२२२ ३३३३३ ४४४४४ ५५५५५
+
+### Hindi | हिंदी वर्णमाला
+count: 150
+अ आ इ ई उ ऊ ए ऐ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह क्ष त्र ज्ञ
+
+### Hindi | समग्र हिंदी टंकण अभ्यास
+count: 100
+कर पर तर घर दीप दाता मानव मकान विचार भारत सरकार समाज जीवन विद्यालय विद्यार्थी अनार आम इमली ऊर्जा एकता औजार
+धोबी भक्त भोजन घोड़ा घड़ी धरती शक्ति शब्द श्रद्धा ज्ञान त्रिशूल क्षमता संस्कृति संकेत संदेश प्रकार प्रकाश
+प्रेम प्रबंध प्रदान प्रेरणा प्रभाव प्रश्न क्षेत्र क्षमा ज्ञानी श्रेणी क़लम ख़बर ग़रीब ज़हर फ़सल काग़ज़
+रोज़गार अख़बार सब्ज़ी नज़र टेलीविज़न रफ़्तार
