@@ -1,0 +1,40 @@
+Smartech Typing Tutor - BUY / RENEW PRICE file
+Upload it to GitHub next to your exercises file. Name must be exactly:  pricing.txt
+Students see it under  Dashboard > Buy / Renew.  Edit on GitHub, commit - students get it the next time the app is online
+(about 5 minutes, or at once with Settings > Update everything now).
+
+EVERYTHING ABOVE THE FIRST "###" LINE IS READ AS SETTINGS (key: value). The lines below are the real ones.
+Settings you can use:  currency, offer, step (repeat for each step), contact, email, phone
+Per course (after its ### line):  code (ENG / PBI / HIN), buy, renew, validity, note
+Write prices as plain text - "1,500" or "1500" - the currency is added in front.
+Leave "offer:" empty to hide the offer line. THE AMOUNTS BELOW ARE SAMPLES - CHANGE THEM.
+
+currency: Rs.
+offer:
+step: Contact the institute and pay the fee for the course you need.
+step: You receive an activation code.
+step: Open Activation (Dashboard bottom links) and enter the code. For a renewal, enter the new code the same way.
+contact: Smartech Education Computer Institute
+email: smartecheducation@gmail.com
+phone:
+
+### English Typing Course
+code: ENG
+buy: 1,500
+renew: 1,000
+validity: 1 Year
+note: Basic to advanced + speed test
+
+### Punjabi Typing Course
+code: PBI
+buy: 1,500
+renew: 1,000
+validity: 1 Year
+note: Basic to advanced + speed test
+
+### Hindi Typing Course
+code: HIN
+buy: 1,500
+renew: 1,000
+validity: 1 Year
+note: Basic to advanced + speed test
