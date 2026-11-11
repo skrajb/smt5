@@ -19,9 +19,9 @@ code: PHHC
 name: SSC CHSL
 language: English, Punjabi
 mode: chunk
-minutes: 10
-wpm: 30
-accuracy: 100
+minutes: 15
+wpm: 35
+accuracy: 97
 code: CHSL 
 
 ### TEST PAU
