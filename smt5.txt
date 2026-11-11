@@ -26,7 +26,7 @@ code: CHSL
 
 ### TEST PAU
 name: Punjab Agriculture Uni. 
-language: English
+language: English, Punjabi
 mode: paragraph
 minutes: 10
 words: 300
