@@ -18,12 +18,12 @@ contact: Smartech Education Computer Institute
 email: smartecheducation@gmail.com
 phone:
 
-### English Typing Course
+### Punjab Haryana High Court   
 code: ENG
-buy: 1,500
-renew: 1,000
-validity: 1 Year
-note: Basic to advanced + speed test
+buy: 350  
+renew: 250
+validity: 90 Days
+note: Keyboard Rows Practice + Speed Test+ Mock Test
 
 ### Punjabi Typing Course
 code: PBI
