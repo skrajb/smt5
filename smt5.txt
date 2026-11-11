@@ -7,10 +7,6 @@ wpm: 30
 accuracy: 92
 code: PSSSB
 
-
-
-
-
 ### TEST PHHC
 name: Punjab & Haryana High Court
 language: English
