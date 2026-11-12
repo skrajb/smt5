@@ -4,10 +4,12 @@ Students see it under  Dashboard > Buy / Renew.  Edit on GitHub, commit - studen
 (about 5 minutes, or at once with Settings > Update everything now).
 
 EVERYTHING ABOVE THE FIRST "###" LINE IS READ AS SETTINGS (key: value). The lines below are the real ones.
-Settings you can use:  currency, offer, step (repeat for each step), contact, email, phone
+Settings you can use:  currency, offer, step (repeat for each step), contact, email, phone, form, form-whatsapp
 Per course (after its ### line):  code (ENG / PBI / HIN), buy, renew, validity, note
 Write prices as plain text - "1,500" or "1500" - the currency is added in front.
-Leave "offer:" empty to hide the offer line. THE AMOUNTS BELOW ARE SAMPLES - CHANGE THEM.
+Leave "offer:" empty to hide the offer line.
+form: paste your Google Form link here (https://forms.gle/...). Students fill their details in it, take a screenshot and send it on WhatsApp
+      to the number in form-whatsapp (country code + number, digits only). Leave "form:" empty to hide the form button. THE AMOUNTS BELOW ARE SAMPLES - CHANGE THEM.
 
 currency: Rs.
 offer:
@@ -17,13 +19,15 @@ step: Open Activation (Dashboard bottom links) and enter the code. For a renewal
 contact: Smartech Education Computer Institute
 email: smartecheducation@gmail.com
 phone:
+form:
+form-whatsapp: 919530994404
 
-### Punjab Haryana High Court   
+### English Typing Course
 code: ENG
-buy: 350  
-renew: 250
-validity: 90 Days
-note: Keyboard Rows Practice + Speed Test+ Mock Test
+buy: 1,500
+renew: 1,000
+validity: 1 Year
+note: Basic to advanced + speed test
 
 ### Punjabi Typing Course
 code: PBI
