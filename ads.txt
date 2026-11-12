@@ -25,3 +25,12 @@ alt: Admissions open
 
 ### Special offer
 image: ad2.png
+
+### Special offer
+image: add2.jpg
+
+### Special offer
+image: add3.jpg
+
+### Special offer
+image: add4.jpg
