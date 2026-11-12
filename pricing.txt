@@ -19,7 +19,7 @@ step: Open Activation (Dashboard bottom links) and enter the code. For a renewal
 contact: Smartech Education Computer Institute
 email: smartecheducation@gmail.com
 phone:
-form:https://docs.google.com/forms/d/e/1FAIpQLSfCzPcUgy6hDPIqdE82Bn4U5UvS6H6VHehAO5bO7p_3aiFsCA/viewform?usp=header
+form: https://docs.google.com/forms/d/e/1FAIpQLSfCzPcUgy6hDPIqdE82Bn4U5UvS6H6VHehAO5bO7p_3aiFsCA/viewform?usp=header
 form-whatsapp: 919530994404
 
 ### English Typing Course
