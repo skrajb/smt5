@@ -19,7 +19,7 @@ Lines that do not look like "key: value" are ignored, so you can write notes any
 show: always
 
 ### Admission open
-image: ad1.jpg
+image: ad2.png
 link: https://example.com
 alt: Admissions open
 
