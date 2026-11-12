@@ -1,0 +1,27 @@
+Smartech Typing Tutor - DASHBOARD PICTURE POPUP file
+Upload this file to GitHub next to smt5.txt / pricing.txt. The name must be exactly:  ads.txt
+Upload your pictures into the SAME GitHub folder and write each file name below.
+Every time a student opens the Dashboard, ONE picture from this list is shown in a popup, picked at random.
+
+BEST PICTURE SIZE:  1280 x 720 px (16:9, landscape).  JPG, PNG or WebP, under 500 KB.
+Keep text/logos about 40 px away from the edges. Use the same size for all pictures.
+(Other shapes also work: the whole picture is always shown, never cropped.
+ Square 1000 x 1000 px and portrait 800 x 1000 px are fine too.)
+
+Settings (above the first ###):
+  show: always     -> popup every time the Dashboard opens (default)
+  show: daily      -> only the first time each day
+  show: session    -> only once each time the app is started
+  enabled: no      -> switch the popup off without deleting anything
+Per picture (after its ### line):  image (file name or full https:// link), link (optional, opens in the browser), alt (optional)
+Lines that do not look like "key: value" are ignored, so you can write notes anywhere.
+
+show: always
+
+### Admission open
+image: ad1.jpg
+link: https://example.com
+alt: Admissions open
+
+### Special offer
+image: ad2.jpg
