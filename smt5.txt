@@ -32,7 +32,7 @@ minutes: 10
 engine: words
 words: 300
 accuracy: 100
-code: PHHC
+code: PAu
 
 
 
