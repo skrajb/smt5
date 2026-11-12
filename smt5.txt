@@ -29,10 +29,11 @@ name: Punjab Agriculture Uni.
 language: English, Punjabi
 mode: paragraph
 minutes: 10
+engine: words
 words: 300
 accuracy: 100
 code: PHHC
-engine: words
+
 
 
 
