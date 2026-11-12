@@ -24,4 +24,4 @@ link: https://example.com
 alt: Admissions open
 
 ### Special offer
-image: ad2.jpg
+image: ad2.png
