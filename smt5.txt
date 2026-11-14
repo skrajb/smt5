@@ -39,17 +39,17 @@ code: PAu
 
 ### Demo English
 ---
-Technology has become an important part of our daily life. Computers, smartphones, and the internet have changed the way people communicate, learn, and work. With the help of modern technology, students can attend online classes, search for information, and improve their knowledge. Artificial Intelligence is also helping people complete difficult tasks more quickly and efficiently. Digital technology has made banking, shopping, education, and business easier than ever before. We should always use technology wisely and learn new digital skills to build a successful future.
+Technology has become an important part of our daily life. Computers, smartphones, and the internet have changed the way people communicate, learn, and work. With the help of modern technology, students can attend online classes, 
 ---
  
 ### Demo Punjabi
 ---
-ਅੱਜ ਦੇ ਆਧੁਨਿਕ ਯੁੱਗ ਵਿੱਚ ਤਕਨਾਲੋਜੀ ਸਾਡੇ ਜੀਵਨ ਦਾ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਹਿੱਸਾ ਬਣ ਗਈ ਹੈ। ਕੰਪਿਊਟਰ, ਮੋਬਾਈਲ ਫੋਨ ਅਤੇ ਇੰਟਰਨੈੱਟ ਨੇ ਸਾਡੇ ਕੰਮ ਕਰਨ ਅਤੇ ਸਿੱਖਣ ਦੇ ਤਰੀਕਿਆਂ ਨੂੰ ਬਦਲ ਦਿੱਤਾ ਹੈ। ਤਕਨਾਲੋਜੀ ਦੀ ਮਦਦ ਨਾਲ ਵਿਦਿਆਰਥੀ ਘਰ ਬੈਠੇ ਆਨਲਾਈਨ ਪੜ੍ਹਾਈ ਕਰ ਸਕਦੇ ਹਨ ਅਤੇ ਨਵੀਆਂ ਜਾਣਕਾਰੀਆਂ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹਨ। ਅੱਜਕੱਲ੍ਹ ਆਰਟੀਫਿਸ਼ਲ ਇੰਟੈਲੀਜੈਂਸ ਦੀ ਵਰਤੋਂ ਨਾਲ ਕਈ ਮੁਸ਼ਕਲ ਕੰਮ ਆਸਾਨੀ ਨਾਲ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ। ਡਿਜੀਟਲ ਤਕਨਾਲੋਜੀ ਨੇ ਬੈਂਕਿੰਗ, ਖਰੀਦਦਾਰੀ ਅਤੇ ਸਿੱਖਿਆ ਦੇ ਖੇਤਰ ਵਿੱਚ ਵੱਡੇ ਬਦਲਾਅ ਲਿਆਂਦੇ ਹਨ। ਸਾਨੂੰ ਤਕਨਾਲੋਜੀ ਦੀ ਸਹੀ ਵਰਤੋਂ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ ਅਤੇ ਆਪਣੇ ਭਵਿੱਖ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਨਵੇਂ ਹੁਨਰ ਸਿੱਖਣੇ ਚਾਹੀਦੇ ਹਨ।
+ਅੱਜ ਦੇ ਆਧੁਨਿਕ ਯੁੱਗ ਵਿੱਚ ਤਕਨਾਲੋਜੀ ਸਾਡੇ ਜੀਵਨ ਦਾ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਹਿੱਸਾ ਬਣ ਗਈ ਹੈ। ਕੰਪਿਊਟਰ, ਮੋਬਾਈਲ ਫੋਨ ਅਤੇ ਇੰਟਰਨੈੱਟ ਨੇ ਸਾਡੇ ਕੰਮ ਕਰਨ ਅਤੇ ਸਿੱਖਣ ਦੇ ਤਰੀਕਿਆਂ ਨੂੰ ਬਦਲ ਦਿੱਤਾ ਹੈ। ਤਕਨਾਲੋਜੀ ਦੀ ਮਦਦ ਨਾਲ ਵਿਦਿਆਰਥੀ ਘਰ ਬੈਠੇ ਆਨਲਾਈਨ ਪੜ੍ਹਾਈ ਕਰ ਸਕਦੇ ਹਨ ਅਤੇ ਨਵੀਆਂ ਜਾਣਕਾਰੀਆਂ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹਨ। 
 ---
  
 ### Demo Hindi
 ---
-आज के आधुनिक युग में प्रौद्योगिकी हमारे जीवन का एक महत्वपूर्ण हिस्सा बन गई है। कंप्यूटर, स्मार्टफोन और इंटरनेट ने हमारे काम करने, सीखने और बातचीत करने के तरीकों को पूरी तरह बदल दिया है। तकनीक की सहायता से विद्यार्थी घर बैठे ऑनलाइन शिक्षा प्राप्त कर सकते हैं और नई जानकारियाँ सीख सकते हैं। आज आर्टिफिशियल इंटेलिजेंस की मदद से कठिन कार्य भी कम समय में आसानी से पूरे किए जा सकते हैं। डिजिटल तकनीक ने बैंकिंग, खरीदारी, शिक्षा और व्यापार को पहले से अधिक सरल बना दिया है। हमें तकनीक का सही उपयोग करना चाहिए और अपने भविष्य को बेहतर बनाने के लिए नए डिजिटल कौशल सीखने चाहिए।
+आज के आधुनिक युग में प्रौद्योगिकी हमारे जीवन का एक महत्वपूर्ण हिस्सा बन गई है। कंप्यूटर, स्मार्टफोन और इंटरनेट ने हमारे काम करने, सीखने और बातचीत करने के तरीकों को पूरी तरह बदल दिया है। तकनीक की सहायता से विद्यार्थी घर बैठे ऑनलाइन शिक्षा प्राप्त कर सकते हैं और नई जानकारियाँ सीख सकते हैं। 
 ---
 
 
