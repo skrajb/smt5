@@ -19,6 +19,8 @@ Lines that do not look like "key: value" are ignored, so you can write notes any
 
 show: always
 
+### Special offer
+image: add6.jpg
 
 ### Special offer
 image: add2.jpg
@@ -28,3 +30,5 @@ image: add3.jpg
 
 ### Special offer
 image: add4.jpg
+
+
