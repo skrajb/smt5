@@ -17,7 +17,7 @@ code: PHHC
 
 ### TEST CHSL 
 name: SSC CHSL
-language: English, Hindi
+language: English, Hindi 
 mode: chunk
 minutes: 15
 wpm: 35
