@@ -19,10 +19,11 @@ code: PHHC
 ### TEST CHSL 
 name: SSC CHSL
 language: English, Hindi 
-mode: chunk
+mode: paragraph
 minutes: 15
 wpm: 35
 accuracy: 97
+basis: gross
 code: CHSL 
 
 ### TEST PAU
