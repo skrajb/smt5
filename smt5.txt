@@ -1,4 +1,5 @@
 
+
 ### TEST PSSSB 
 name: PSSSB Clerk
 language: English, Punjabi
@@ -17,7 +18,7 @@ words: 300
 code: PHHC
 
 ### TEST CHSL 
-name: SSC CHSL
+name: SSC CHSL/CGL
 language: English, Hindi 
 mode: paragraph
 minutes: 15
